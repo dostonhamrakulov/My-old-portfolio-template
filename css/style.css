@@ -57,3 +57,79 @@ nav.navbar.navbar-default {
     z-index: 9999;
     border: none;
 }
+
+ul.nav.navbar-nav {
+    padding-top: 1.3em;
+}
+
+.navbar-nav {
+    float: right;
+    margin: 0;
+    text-align: center;
+}
+
+.navbar-header h1 a {
+    color: #fff;
+    padding: 4px 10px;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    font-family: 'Monoton', cursive;
+}
+
+.navbar-header h1 a span {
+    font-size: .5em;
+}
+
+
+/*-- top-nav --*/
+
+.navbar-nav li {
+    float: none;
+    display: inline-block;
+}
+
+.nav.navbar-nav.nav-center li a {
+    color: #fff;
+    font-size: 1.2em;
+    padding: 0;
+    letter-spacing: 2px;
+    position: relative;
+    min-width: 101px;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    transition: 0.5s all;
+    text-decoration: none;
+}
+
+.nav.navbar-nav.nav-center li a:hover,
+.nav.navbar-nav.nav-center li a:focus,
+.nav.navbar-nav.nav-center li a.active {
+    color: #eead31;
+}
+
+.nav-hover:hover,
+.nav.navbar-nav.nav-center li a.active {
+    letter-spacing: 3px;
+}
+
+.nav-hover:after {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border: 1px solid rgba(255, 255, 255, 0);
+    bottom: -3px;
+    content: " ";
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    -webkit-transition: all 280ms ease-in-out;
+    -moz-transition: all 280ms ease-in-out;
+    -o-transition: all 280ms ease-in-out;
+    -ms-transition: all 280ms ease-in-out;
+    transition: all 280ms ease-in-out;
+    width: 0;
+}
