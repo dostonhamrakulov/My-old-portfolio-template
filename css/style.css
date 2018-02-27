@@ -473,3 +473,151 @@ ul.dropdown-menu {
 
 
 /*--// Prices --*/
+
+/*-- team --*/
+
+h3.sec-title {
+    color: #eead31;
+    text-align: right;
+    font-size: 2em;
+    text-transform: capitalize;
+    background: #000;
+    padding: 12px 15px 12px 10px;
+    margin-bottom: 1em;
+    width: 30%;
+    float: right;
+}
+
+h3.sec-title span {
+    background: #eead31;
+    color: #000;
+    padding: 0 5px;
+    margin: 0 10px;
+}
+
+.team-grids {
+    padding: 0;
+    text-align: center;
+}
+
+.team-effect {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    -webkit-box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.65);
+    -moz-box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.65);
+    -o-box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.65);
+    -ms-box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.65);
+    box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.65);
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.team-effect img {
+    height: 100%;
+    width: 100%;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.team-effect:before {
+    content: '';
+    background-color: rgba(0, 0, 0, 0);
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.team-effect:hover:before {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.team-effect:hover .w3_agile-team-text {
+    -moz-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+    border-radius: 0 0 0 0;
+}
+
+.team-effect:hover .social-icon {
+    bottom: 34%;
+    -moz-transform: translateY(-80%);
+    -o-transform: translateY(-80%);
+    -ms-transform: translateY(-80%);
+    -webkit-transform: translateY(-80%);
+    transform: translateY(-80%);
+}
+
+.team-effect:hover .social-icon a {
+    -webkit-animation-name: translate-transition;
+    -webkit-animation-duration: 0.8s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1;
+    animation-name: translate-transition;
+    animation-duration: 0.8s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+
+.team-effect .w3_agile-team-text {
+    background-color: #000;
+    -webkit-transition: all cubic-bezier(0.27, 0.89, 0.95, 0.59) 0.5s;
+    -moz-transition: all cubic-bezier(0.27, 0.89, 0.95, 0.59) 0.5s;
+    -ms-transition: all cubic-bezier(0.27, 0.89, 0.95, 0.59) 0.5s;
+    -o-transition: all cubic-bezier(0.27, 0.89, 0.95, 0.59) 0.5s;
+    transition: all cubic-bezier(0.27, 0.89, 0.95, 0.59) 0.5s;
+    padding: 20px;
+    width: 100%;
+    position: absolute;
+    z-index: 99;
+    -webkit-border-radius: 25px 0 0 0;
+    -moz-border-radius: 25px 0 0 0;
+    border-radius: 25px 0 0 0;
+}
+
+.team-effect .w3_agile-team-text h4 {
+    color: #e8c802;
+    font-size: 1.5em;
+}
+
+.team-effect .w3_agile-team-text p {
+    margin-top: 0.3em;
+}
+
+.team-effect .social-icon {
+    bottom: 0;
+    padding: 10px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    overflow: hidden;
+    z-index: 9;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    -moz-transform: translateY(1000%);
+    -o-transform: translateY(1000%);
+    -ms-transform: translateY(1000%);
+    -webkit-transform: translateY(1000%);
+    transform: translateY(1000%);
+}
