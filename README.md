@@ -19,7 +19,11 @@
 >*Software Developer, Samarkand, Uzbekistan*
 
 
-Bu online portfolio template, hozir sihlatganim emas
+This is portfolio which I used before but currently I am not using it
+
+Bu oldingi online portfolio template, hozir ishlatganim emas
 
 # idoston.com
 <a href="https://idoston.com">Learn More</a>
+
+### Enjoy :)
