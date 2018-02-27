@@ -133,3 +133,79 @@ ul.nav.navbar-nav {
     transition: all 280ms ease-in-out;
     width: 0;
 }
+
+.nav-hover:hover:after,
+.navbar-default .navbar-nav li a.active:after {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-color: #eead31;
+    -webkit-transition: width 350ms ease-in-out;
+    -moz-transition: width 350ms ease-in-out;
+    -o-transition: width 350ms ease-in-out;
+    -ms-transition: width 350ms ease-in-out;
+    transition: width 350ms ease-in-out;
+    width: 55%;
+}
+
+.nav.navbar-nav.navbar-right li a.dropdown-toggle {
+    padding: 0;
+    font-size: 1.6em;
+    color: #eead31;
+    margin: 0 0.8em .5em
+}
+
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:hover,
+.navbar-default .navbar-nav>.open>a:focus {
+    color: #fff;
+    background: none;
+}
+
+ul.dropdown-menu {
+    background: transparent;
+    border-color: #909090;
+}
+
+ul.dropdown-menu {
+    -moz-animation: fadeInDown .3s ease-in;
+    -webkit-animation: fadeInDown .3s ease-in;
+    -o-animation: fadeInDown .3s ease-in;
+    -ms-animation: fadeInDown .3s ease-in;
+    animation: fadeInDown .3s ease-in;
+}
+
+.nav.navbar-nav.navbar-right li ul.dropdown-menu li a {
+    font-size: 1em;
+    text-align: center;
+    color: #999;
+}
+
+.nav.navbar-nav.navbar-right li ul.dropdown-menu li a {
+    font-size: 1em;
+    text-align: center;
+    color: #fff;
+    font-weight: 300;
+}
+
+.dropdown-menu>li>a:hover,
+.dropdown-menu>li>a:focus {
+    background-color: transparent;
+}
+
+
+/*-- //top-nav --*/
+
+.cd-radial-slider-content h3 {
+    font-size: 2.5em;
+    color: #fff;
+    font-style: italic;
+    line-height: 1.2em;
+}
+
+.w3ls-banner-text h4 {
+    margin: 0.2em 0 0;
+    color: #fff;
+    font-size: 7.5em;
+    font-weight: 800;
+    text-transform: uppercase;
+}
