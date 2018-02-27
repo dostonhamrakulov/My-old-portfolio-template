@@ -621,3 +621,156 @@ h3.sec-title span {
     -webkit-transform: translateY(1000%);
     transform: translateY(1000%);
 }
+.social-button {
+    display: inline-block;
+    background-color: #fff;
+    width: 40px;
+    height: 40px;
+    margin: 0 3px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    opacity: .99;
+    -webkit-border-radius: 20%;
+    -moz-border-radius: 20%;
+    border-radius: 20%;
+}
+
+.social-button:before {
+    content: '';
+    background-color: #000;
+    width: 120%;
+    height: 120%;
+    position: absolute;
+    top: 102%;
+    left: -118%;
+    -webkit-transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+    -moz-transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+    transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+}
+
+.social-button .fa {
+    font-size: 2em;
+    line-height: 1.5;
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+    -webkit-transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+    -moz-transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+    transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+}
+
+.social-button.facebook:before {
+    background-color: #3B5998;
+}
+
+.social-button.facebook .fa {
+    color: #3B5998;
+}
+
+.social-button.twitter:before {
+    background-color: #3CF;
+}
+
+.social-button.twitter .fa {
+    color: #3CF;
+}
+
+.social-button.google:before {
+    background-color: #DC4A38;
+}
+
+.social-button.google .fa {
+    color: #DC4A38;
+}
+
+.social-button.dribbble:before {
+    background-color: #F26798;
+}
+
+.social-button.dribbble .fa {
+    color: #F26798;
+}
+
+.social-button.skype:before {
+    background-color: #00AFF0;
+}
+
+.social-button.skype .fa {
+    color: #00AFF0;
+}
+
+.social-button:focus:before,
+.social-button:hover:before {
+    top: -10%;
+    left: -10%;
+}
+
+.social-button:focus .fa,
+.social-button:hover .fa {
+    color: #fff;
+    -webkit-transform: scale(1);
+    -o-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+
+/*-- //team --*/
+
+
+/*-- gallery --*/
+
+.gallery {
+    background: #e8e8e8;
+}
+
+.gallery-grids:nth-child(1) {
+    padding: 0 1em 0em 0;
+}
+
+.gallery-grids:nth-child(2) {
+    padding: 0 1em 0 0em;
+}
+
+div#gallery h3.sec-title,
+#clients h3.sec-title {
+    float: left;
+    width: 26%;
+}
+
+.gallery-grids {
+    padding: 1em;
+}
+
+
+/*-- imghvr-hinge --*/
+
+[class^='imghvr-'],
+[class*=' imghvr-'] {
+    position: relative;
+    display: inline-block;
+    margin: 0px;
+    max-width: 100%;
+    background-color: #eead31;
+    color: #212121;
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    cursor: pointer;
+}
+
+[class^='imghvr-']>img,
+[class*=' imghvr-']>img {
+    vertical-align: top;
+    max-width: 100%;
+}
