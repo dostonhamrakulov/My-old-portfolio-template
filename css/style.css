@@ -209,3 +209,139 @@ ul.dropdown-menu {
     font-weight: 800;
     text-transform: uppercase;
 }
+
+.banner-right {
+    padding: 3em 3em 0;
+}
+
+.banner-left {
+    padding: 2em;
+}
+
+.banner-left {
+    border-right: 1px solid #fff;
+}
+
+.w3ls-banner-text.text-center p {
+    color: #fff;
+    font-size: 1.2em;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+
+.cd-radial-slider-content h2 span,
+.cd-radial-slider-content h3 span {
+    display: block;
+    color: #eead31;
+}
+
+.ban-btn {
+    font-size: 1em;
+    color: #fff !important;
+    border: 1px solid #fff;
+    padding: .6em 1.5em;
+    margin-top: 2em;
+    display: inline-block;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    position: relative;
+    outline: none;
+    text-decoration: none !important;
+}
+
+.ban-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0;
+    background-color: #eead31;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.ban-btn:hover {
+    color: #fff;
+}
+
+.ban-btn:hover::before {
+    opacity: 1;
+    width: 100%;
+}
+
+
+/*-- //banner --*/
+
+
+/*-- about--*/
+
+
+/*-- Pricecs --*/
+
+.prices-grids {
+    text-align: center;
+    border: 1px solid #e8e8e8;
+    background: rgba(0, 0, 0, 0.09);
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    padding: 0;
+    padding: 0 0 1.5em;
+}
+
+.agileinfo-price-top {
+    padding: 1.5em 0;
+    border-bottom: 1px solid #d2d2d2;
+}
+
+.agileinfo-price-top h5 {
+    font-size: 2.2em;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #000;
+}
+
+.agileinfo-price-top p {
+    font-size: 1em;
+    letter-spacing: 4px;
+    word-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.prices-grids ul li {
+    list-style: none;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    margin-top: 1.5em;
+    color: #505050;
+}
+
+.prices-grids:hover {
+    box-shadow: 3px 3px 22px rgba(0, 0, 0, 0.23);
+}
+
+.prices-grids:hover .agileinfo-price-top {
+    background: #eead31;
+}
+
+.prices-grids:hover .agileinfo-price-top h5 {
+    color: #fff;
+}
+
+.prices-grids:hover .agileinfo-price-top p {
+    color: #000;
+}
+
+.prices-grids:hover .form-buttons a {
+    background: #eead31;
+    color: #fff;
+    width: 100%;
+}
