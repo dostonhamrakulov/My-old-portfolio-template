@@ -56,17 +56,66 @@ jQuery(document).ready(function($){
 			//mask slide image to reveal navigation round element
 			this.slides.eq(this.visibleIndex).find('image').attr('style', 'mask: url(#'+this.leftMask.attr('id')+')');
 
-			function bezier(x1, y1, x2, y2, epsilon){
-				//https://github.com/arian/cubic-bezier
-				var curveX = function(t){
-					var v = 1 - t;
-					return 3 * v * v * t * x1 + 3 * v * t * t * x2 + t * t * t;
-				};
+			//animate slider navigation round element
+			clipPathNext.attr({
+				'r': radius1,
+				'cx': self.slider.data('centerx2'),
+			});
+			this.slides.eq(this.nextVisible).addClass('next-slide move-up');
+			this.slides.filter('.prev-slide').addClass('scale-down');
+		} else {
+			//animate slide content
+			this.slides.eq(this.visibleIndex).addClass('content-reveal-right');
+			this.slides.eq(this.nextVisible).addClass('content-hide-right');
+			//mask slide image to reveal navigation round element
+			this.slides.eq(this.visibleIndex).find('image').attr('style', 'mask: url(#'+this.rightMask.attr('id')+')');
 
-				var curveY = function(t){
-					var v = 1 - t;
-					return 3 * v * v * t * y1 + 3 * v * t * t * y2 + t * t * t;
-				};
+			//animate slider navigation round element
+			clipPathPrev.attr({
+				'r': radius1,
+				'cx': this.slider.data('centerx1'),
+			});
+			this.slides.eq(this.prevVisible).addClass('prev-slide move-up');
+			this.slides.filter('.next-slide').addClass('scale-down');
+		}
+
+		// reveal new slide image - animate clipPath element
+		clipPathVisible.attr({
+			'r': radius1,
+			'cx': centerx,
+		}).animate({'r': radius2}, duration, customMinaAnimation, function(){
+
+			if( direction == 'next' ) {
+				self.slides.filter('.prev-slide').removeClass('prev-slide scale-down');
+				clipPathPrev.attr({
+					'r': radius1,
+					'cx': self.slider.data('centerx1'),
+				});
+				self.slides.eq(self.prevVisible).removeClass('visible').addClass('prev-slide');
+			} else {
+				self.slides.filter('.next-slide').removeClass('next-slide scale-down');
+				clipPathNext.attr({
+					'r': radius1,
+					'cx': self.slider.data('centerx2'),
+				});
+				self.slides.eq(self.nextVisible).removeClass('visible').addClass('next-slide');
+			}
+			self.slides.eq(self.visibleIndex).removeClass('is-animating').addClass('visible').find('image').removeAttr('style');
+			self.slides.filter('.move-up').removeClass('move-up');
+
+			setTimeout(function(){
+				self.slides.eq(self.visibleIndex).removeClass('content-reveal-left content-reveal-right');
+				self.slides.eq(self.prevVisible).removeClass('content-hide-left content-hide-right');
+				self.slides.eq(self.nextVisible).removeClass('content-hide-left content-hide-right');
+				self.animating =  false;
+			}, 100);
+		});
+	}
+
+	//initialize the radial slider
+	$('.cd-radial-slider-wrapper').each(function(){
+		new radialSlider($(this));
+	});
 
 				var derivativeCurveX = function(t){
 					var v = 1 - t;
