@@ -19,7 +19,7 @@ jQuery(document).ready(function($){
 		this.leftMask = this.mask.find('mask').eq(0);
 		this.rightMask = this.mask.find('mask').eq(1);
 		this.bindEvents();
-	}
+	} 
 
 	radialSlider.prototype.bindEvents = function() {
 		var self = this;
@@ -124,7 +124,7 @@ jQuery(document).ready(function($){
 				self.slides.eq(self.nextVisible).removeClass('content-hide-left content-hide-right');
 				self.animating =  false;
 			}, 100);
-		});
+		});	
 	}
 
 	//initialize the radial slider
