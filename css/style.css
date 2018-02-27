@@ -345,3 +345,131 @@ ul.dropdown-menu {
     color: #fff;
     width: 100%;
 }
+/*-- //banner --*/
+
+
+/*-- about--*/
+
+
+/*-- Pricecs --*/
+
+.prices-grids {
+    text-align: center;
+    border: 1px solid #e8e8e8;
+    background: rgba(0, 0, 0, 0.09);
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    padding: 0;
+    padding: 0 0 1.5em;
+}
+
+.agileinfo-price-top {
+    padding: 1.5em 0;
+    border-bottom: 1px solid #d2d2d2;
+}
+
+.agileinfo-price-top h5 {
+    font-size: 2.2em;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #000;
+}
+
+.agileinfo-price-top p {
+    font-size: 1em;
+    letter-spacing: 4px;
+    word-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.prices-grids ul li {
+    list-style: none;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    margin-top: 1.5em;
+    color: #505050;
+}
+
+.prices-grids:hover {
+    box-shadow: 3px 3px 22px rgba(0, 0, 0, 0.23);
+}
+
+.prices-grids:hover .agileinfo-price-top {
+    background: #eead31;
+}
+
+.prices-grids:hover .agileinfo-price-top h5 {
+    color: #fff;
+}
+
+.prices-grids:hover .agileinfo-price-top p {
+    color: #000;
+}
+
+.prices-grids:hover .form-buttons a {
+    background: #eead31;
+    color: #fff;
+    width: 100%;
+}
+
+
+/*-- mid-Prices-active --*/
+
+.mid-price .agileinfo-price-top {
+    background: #eead31;
+}
+
+.mid-price {
+    box-shadow: 3px 3px 22px rgba(0, 0, 0, 0.23);
+}
+
+.mid-price .agileinfo-price-top h5 {
+    color: #fff;
+}
+
+.mid-price .agileinfo-price-top p {
+    color: #000;
+}
+
+.mid-price .form-buttons a {
+    background: #eead31;
+    width: 100%;
+    color: #fff;
+}
+
+.form-buttons a span {
+    color: #eead31;
+    font-size: 17px;
+    padding-right: 4px;
+}
+
+.form-buttons a {
+    background: #ffffff;
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.7em 2em;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    margin-top: 1.3em;
+}
+
+.form-buttons a:hover {
+    background: #252525;
+    color: #fff;
+    text-decoration: none;
+}
+
+.form-buttons a:focus {
+    outline: none;
+}
+
+
+/*--// mid-Prices-active --*/
+
+
+/*--// Prices --*/
